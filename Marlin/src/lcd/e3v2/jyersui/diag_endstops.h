@@ -1,0 +1,45 @@
+/**
+ * Marlin 3D Printer Firmware
+ * Copyright (c) 2021 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ *
+ * Based on Sprinter and grbl.
+ * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+ */
+#pragma once
+
+/**
+ * Based on part of original sources provided by Prusa under GPL
+ * However, this code exists in others sources where the declared author does not respect
+ * the GPL license by using parts of source code without citing the original authors
+ * or by hiding code that must remain open.
+ */
+
+/**
+ * Modify and enhanced by Tititopher68-dev (Christophe L.) since 28/11/2021 !
+ * build v3.0.0a was public at 28/05/2022 !
+ */
+
+#include "../../../core/types.h"
+
+
+class EndSDiagClass {
+public:
+  void Draw_ends_diag();
+  void Update_ends_diag();
+};
+
+extern EndSDiagClass EndSDiag;
